@@ -17,3 +17,8 @@
 ## Support
 
 Open an issue on [Github](https://github.com/tootiapps/streamshare/issues)
+
+
+## Pages view
+
+https://tootiapps.github.io/streamshare
