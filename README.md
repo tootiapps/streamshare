@@ -1,6 +1,6 @@
 <img src="./images/logo-txt.svg" width="256">
 
-# Streamshare Documentation
+## Documentation
 
 1. [How to Add a Kodi Device](./doc/device/index.md)
 2. [How to Manage a Streaming List](./doc/list/index.md)
@@ -10,3 +10,10 @@
 6. [How to Use My AllDebrid Account](./doc/alldebrid/index.md)
 7. [How to Use the Kodi Remote](./doc/remote/index.md)
 8. [How to Backup My Data](./doc/backup/index.md)
+
+
+
+
+## Support
+
+Open an issue on [Github](https://github.com/tootiapps/streamshare/issues)
