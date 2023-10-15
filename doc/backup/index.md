@@ -2,7 +2,7 @@
 
 **1 - Backup of Lists**
 
-Streamshare allows you to easily export and import your link lists in JSON format. To learn more, go to the ["Lists"](./list/index.md) section.
+Streamshare allows you to easily export and import your link lists in JSON format. To learn more, go to the ["Lists"](../list/index.md) section.
 
 **2 - Full Backup**
 
