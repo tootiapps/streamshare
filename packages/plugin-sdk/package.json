@@ -1,0 +1,61 @@
+{
+  "name": "@streamshare/plugin-sdk",
+  "version": "1.0.0",
+  "description": "Public TypeScript contracts and validators for StreamShare addons",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./compatibility.json": "./compatibility.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "compatibility.json"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "pnpm run build && node --test test/*.test.mjs",
+    "prepack": "pnpm run test",
+    "release:check": "pnpm run test && pnpm pack --dry-run"
+  },
+  "keywords": [
+    "streamshare",
+    "addon",
+    "plugin",
+    "sdk",
+    "typescript"
+  ],
+  "author": "TootiApps",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tootiapps/streamshare.git",
+    "directory": "packages/plugin-sdk"
+  },
+  "homepage": "https://docs.tootiapps.com/addons/",
+  "bugs": {
+    "url": "https://github.com/tootiapps/streamshare/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "compare-versions": "^6.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

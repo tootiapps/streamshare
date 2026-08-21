@@ -1,0 +1,8 @@
+/.docusaurus/
+/build/
+/api/
+/content/addons/api/
+/content/services/api/
+/static/llms.txt
+/static/llms-full.txt
+/static/markdown/

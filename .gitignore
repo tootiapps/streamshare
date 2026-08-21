@@ -1,1 +1,14 @@
-.DS_STORE
+.DS_Store
+.env
+.env.*
+!.env.example
+
+node_modules/
+dist/
+build/
+.docusaurus/
+.cache/
+coverage/
+
+*.log
+*.tgz

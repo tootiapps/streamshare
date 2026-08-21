@@ -1,0 +1,41 @@
+{
+  "id": "com.tootiapps.streamshare.hello",
+  "name": "Hello StreamShare",
+  "version": "1.0.0",
+  "compatibleVersion": "^3.13.0",
+  "type": "automation",
+  "main": "dist/index.js",
+  "author": "TootiApps",
+  "description": "A minimal addon demonstrating configuration, events and actions.",
+  "permissions": {
+    "network": []
+  },
+  "subscriptions": [
+    {
+      "event": "app:started"
+    }
+  ],
+  "config": [
+    {
+      "key": "greeting",
+      "type": "text",
+      "label": "Greeting",
+      "default": "Hello"
+    }
+  ],
+  "actions": [
+    {
+      "id": "say_hello",
+      "label": "Say hello",
+      "description": "Displays a greeting using the configured message.",
+      "inputs": [
+        {
+          "key": "recipient",
+          "type": "text",
+          "label": "Recipient",
+          "default": "StreamShare"
+        }
+      ]
+    }
+  ]
+}

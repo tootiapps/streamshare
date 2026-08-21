@@ -1,0 +1,37 @@
+{
+  "name": "@streamshare/documentation",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Build workspace for the public StreamShare documentation",
+  "scripts": {
+    "start": "pnpm run prepare:content && docusaurus start",
+    "build": "pnpm run prepare:content && docusaurus build",
+    "serve": "docusaurus serve --port 5478",
+    "clear": "docusaurus clear",
+    "generate:api": "node scripts/generate-api-docs.mjs",
+    "generate:ai": "node scripts/generate-ai-docs.mjs",
+    "prepare:content": "pnpm run generate:api && pnpm run generate:ai",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/plugin-content-docs": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "0.55.3",
+    "@mdx-js/react": "3.1.1",
+    "clsx": "2.1.1",
+    "prism-react-renderer": "2.4.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "typedoc": "0.28.20",
+    "typedoc-docusaurus-theme": "1.4.2",
+    "typedoc-plugin-markdown": "4.12.0",
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "typescript": "~5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}

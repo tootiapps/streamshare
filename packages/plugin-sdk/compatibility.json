@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sdk": {
+    "minimum": "1.0.0",
+    "latestTested": "1.0.0"
+  },
+  "application": {
+    "minimum": "3.13.0",
+    "latestTested": "3.13.1"
+  },
+  "platforms": {
+    "androidInteractive": true,
+    "androidHeadless": true,
+    "iosInteractive": false,
+    "webInteractive": false
+  }
+}

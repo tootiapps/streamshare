@@ -1,0 +1,36 @@
+{
+  "name": "streamshare-example-service",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Reference Express implementation of the StreamShare service protocol",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prebuild": "pnpm --filter @streamshare/service build",
+    "build": "tsc -p tsconfig.json",
+    "test": "pnpm run build && node --test tests/*.test.mjs",
+    "start": "pnpm run build && node dist/index.js",
+    "start:network": "HOST=0.0.0.0 pnpm run start"
+  },
+  "keywords": [
+    "streamshare",
+    "example",
+    "express"
+  ],
+  "author": "TootiApps",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@streamshare/service": "workspace:*",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.18",
+    "typescript": "^5.2.2"
+  }
+}
