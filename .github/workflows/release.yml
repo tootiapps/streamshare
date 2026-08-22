@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   id-token: write
 
 concurrency:
@@ -38,3 +38,6 @@ jobs:
 
       - name: Publish unpublished package versions
         run: pnpm exec changeset publish
+
+      - name: Push release tags
+        run: git push origin --follow-tags
