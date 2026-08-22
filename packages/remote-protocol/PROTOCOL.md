@@ -1,7 +1,7 @@
-# Streamshare Remote Protocol v1
+# StreamShare Remote Protocol v1
 
-Streamshare Remote Protocol is the interoperable contract used by Streamshare
-senders and Streamshare TV receivers. Discovery uses DNS-SD with the service
+StreamShare Remote Protocol is the interoperable contract used by StreamShare
+senders and StreamShare TV receivers. Discovery uses DNS-SD with the service
 type `_streamshare-tv._tcp.local.`. Control traffic uses HTTPS and WSS on the
 advertised TCP port. The authenticated WebSocket endpoint is `/v1/ws`.
 

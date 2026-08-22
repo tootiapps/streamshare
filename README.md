@@ -62,7 +62,10 @@ pnpm changeset
 ```
 
 This repository does not publish packages automatically. Releases are promoted
-only after an explicit maintainer review and a successful release check.
+only from `main`, after an explicit maintainer approval in the protected
+`npm-production` environment and a successful release check. The manual release
+workflow is prepared for npm trusted publishing and does not require a
+long-lived publication token once the npm package trust relationship is active.
 
 ## Public scope
 
