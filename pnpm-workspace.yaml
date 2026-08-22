@@ -1,0 +1,9 @@
+packages:
+  - 'packages/*'
+
+overrides:
+  serialize-javascript: 7.1.0
+
+allowBuilds:
+  core-js: false
+  esbuild: true

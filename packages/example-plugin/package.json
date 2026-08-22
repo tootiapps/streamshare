@@ -1,0 +1,21 @@
+{
+  "name": "@streamshare/example-hello-addon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal publishable example for the StreamShare addon SDK",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "streamshare-plugin-cli dev",
+    "validate": "streamshare-plugin-cli validate --app-version 3.13.1",
+    "build": "streamshare-plugin-cli build",
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm run typecheck && pnpm run build"
+  },
+  "dependencies": {
+    "@streamshare/plugin-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@streamshare/plugin-cli": "workspace:*",
+    "typescript": "^5.0.0"
+  }
+}

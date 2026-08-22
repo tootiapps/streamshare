@@ -1,0 +1,13 @@
+{
+  "id": "com.tootiapps.streamshare.catalog-example",
+  "name": "Example Catalog Source",
+  "version": "1.0.0",
+  "compatibleVersion": "^3.13.0",
+  "type": "source",
+  "main": "dist/index.js",
+  "author": "TootiApps",
+  "description": "A deterministic catalog demonstrating the public source-addon contract.",
+  "permissions": {
+    "network": []
+  }
+}

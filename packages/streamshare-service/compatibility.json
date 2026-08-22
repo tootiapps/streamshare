@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "protocol": {
+    "minimum": 1,
+    "latestTested": 1
+  },
+  "package": {
+    "minimum": "1.0.1",
+    "latestTested": "1.0.1"
+  },
+  "application": {
+    "minimum": "3.13.0",
+    "latestTested": "3.13.1"
+  }
+}

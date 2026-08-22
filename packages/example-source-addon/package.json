@@ -1,0 +1,21 @@
+{
+  "name": "@streamshare/example-source-addon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reference implementation of the public StreamShare source-addon contract",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "streamshare-plugin-cli dev",
+    "validate": "streamshare-plugin-cli validate",
+    "build": "streamshare-plugin-cli build",
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm run typecheck && pnpm run build && node --test test/source.test.cjs"
+  },
+  "dependencies": {
+    "@streamshare/plugin-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@streamshare/plugin-cli": "workspace:*",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "streamshare-public-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Controlled public distribution workspace for the StreamShare developer ecosystem",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm -r --if-present run build",
+    "test": "pnpm -r --if-present run test",
+    "docs:typecheck": "pnpm --filter @streamshare/documentation typecheck",
+    "docs:build": "pnpm --filter @streamshare/documentation build",
+    "audit:prod": "pnpm audit --prod",
+    "ci": "pnpm run test && pnpm run docs:typecheck && pnpm run docs:build && pnpm exec changeset status && pnpm run audit:prod",
+    "release:check": "pnpm run ci && pnpm --filter @streamshare/plugin-sdk release:check && pnpm --filter @streamshare/plugin-cli release:check && pnpm --filter @streamshare/service release:check && pnpm --filter @streamshare/remote-protocol release:check",
+    "changeset": "changeset",
+    "version-packages": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/cli": "3.0.1"
+  }
+}
