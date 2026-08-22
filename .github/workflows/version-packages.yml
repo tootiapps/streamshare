@@ -34,7 +34,12 @@ jobs:
       - name: Install locked dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Select the Changesets mode
+        id: changesets
+        uses: changesets/action/select-mode@v2
+
       - name: Create or update the version pull request
+        if: steps.changesets.outputs.mode == 'version'
         uses: changesets/action/version@v2
         with:
           script: pnpm version-packages
