@@ -36,7 +36,7 @@ reference and AI-oriented Markdown outputs from the same maintained sources.
 
 Requirements:
 
-- Node.js 22 or newer;
+- Node.js 22.15 or newer;
 - pnpm 11.9.0 through Corepack.
 
 ```bash

@@ -2,6 +2,7 @@ packages:
   - 'packages/*'
 
 overrides:
+  '@docusaurus/core>webpack-dev-server': 6.0.0
   serialize-javascript: 7.1.0
 
 allowBuilds:
