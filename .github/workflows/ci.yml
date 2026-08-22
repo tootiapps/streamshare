@@ -18,6 +18,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Prepare the Changesets base branch
+        if: github.event_name == 'pull_request'
+        run: git branch main origin/main
+
       - name: Enable pnpm
         uses: pnpm/action-setup@v4
         with:
