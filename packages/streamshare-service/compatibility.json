@@ -5,8 +5,8 @@
     "latestTested": 1
   },
   "package": {
-    "minimum": "1.0.1",
-    "latestTested": "1.0.1"
+    "minimum": "1.0.2",
+    "latestTested": "1.0.2"
   },
   "application": {
     "minimum": "3.13.0",
