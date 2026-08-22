@@ -62,10 +62,16 @@ pnpm changeset
 ```
 
 This repository does not publish packages automatically. Releases are promoted
-only from `main`, after an explicit maintainer approval in the protected
-`npm-production` environment and a successful release check. The manual release
-workflow is prepared for npm trusted publishing and does not require a
-long-lived publication token once the npm package trust relationship is active.
+only from `main` through a controlled two-step process:
+
+1. Changesets creates or updates a draft version pull request containing the
+   package versions and changelogs. A maintainer reviews and merges it.
+2. A maintainer starts the manual publication workflow and explicitly approves
+   the protected `npm-production` environment.
+
+The publication workflow runs the complete release check, uses npm trusted
+publishing without a long-lived publication token, and pushes the annotated Git
+tags created for the published package versions.
 
 ## Public scope
 

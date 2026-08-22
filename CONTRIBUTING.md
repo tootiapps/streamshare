@@ -30,3 +30,15 @@ pnpm run release:check
 ```
 
 Documentation-only changes and private examples do not require a Changeset.
+
+## Maintainer release process
+
+After consumer-visible changes reach `main`, the version workflow creates or
+updates a draft pull request. Maintainers review its semantic version bumps and
+changelog entries before marking it ready and merging it.
+
+Merging the version pull request does not publish anything. A maintainer must
+start the `Publish npm packages` workflow from `main` and approve the protected
+`npm-production` environment. The workflow validates the release, publishes
+through npm trusted publishing, and preserves the corresponding annotated Git
+tags in this repository.
